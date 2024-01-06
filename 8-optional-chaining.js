@@ -7,7 +7,7 @@
 const person = {
   name: "John Doe",
   age: 50,
-  eyeColor: "blue",
+  // eyeColor: "blue",
   address: {
     street: "50 Main street",
     city: "Boston",
@@ -16,48 +16,5 @@ const person = {
   },
 };
 
-const people = [
-  {
-    name: "John Doe",
-    age: 50,
-    eyeColor: "blue",
-    address: {
-      street: "50 Main street",
-      city: "Boston",
-      state: "MA",
-      zipCode: "02101",
-    },
-  },
-  {
-    name: "Jane Doe",
-    eyeColor: "blue",
-    address: {
-      street: "50 Main street",
-      city: "Boston",
-      state: "MA",
-      zipCode: "02101",
-    },
-  },
-  {
-    name: "Jack Doe",
-    age: 50,
-    eyeColor: "blue",
-    address: {
-      street: "50 Main street",
-      city: "Boston",
-      state: "MA",
-      zipCode: "02101",
-    },
-  },
-  {
-    name: "Jill Doe",
-    age: 50,
-    eyeColor: "blue",
-    address: {
-      street: "50 Main street",
-      city: "Boston",
-      state: "MA",
-      zipCode: "02101",
-    },
-  },
-];
+console.log(person.eyeColor?.replace("l", "y")??"brown");// 👈🏾 optional chaining
+

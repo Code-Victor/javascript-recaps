@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const names = ["victor", "jose", "maria", "julia", "joehana"];
 
 const people = [
@@ -37,17 +39,25 @@ const people = [
 /**
  * The Solution 1:
  * use the filter method
- * 
+ *
  * filter method takes a callback function as an argument and returns a new array with the result of each iteration
  * usage: array.filter(callback)
  */
 
+const result = people.filter((person, i) => {
+  return person.name==="victor";
+});
+console.log(result)
 
 /**
  * The Solution 2:
  * use the find method
- * 
+ *
  * find method takes a callback function as an argument and returns the first element that matches the condition
  * usage: array.find(callback)
  */
- 
+
+const result2 = people.find((person, i) => {
+  return person.name === "victor";
+});
+console.log(result2);

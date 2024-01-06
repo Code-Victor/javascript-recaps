@@ -11,9 +11,27 @@ const person = {
   eyeColor: "blue",
 };
 
+const { eyeColor, ...needed } = person;
+
+// console.log(eyeColor)
+console.log(needed);
+
+
+// React Component Example: creating a custom `Link` component.
+/**
+ * function Link({stylish,...otherProps}){
+ * if (stylish){
+ *  ...
+ * }
+ * return <a {...{otherProps}}/>
+ * }
+ */
 
 /**
  * Spread Operator (Object)
  *
  * The spread operator is used to expand an object.
  */
+
+const aNumber = 10;
+console.log({ ...needed,eyeColor });
